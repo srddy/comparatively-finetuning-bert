@@ -161,7 +161,6 @@ for epoch in range(NUM_EPOCHS):
 
     if test_loss < best_test_loss:
         best_test_loss = test_loss
-        torch.save(model.state_dict(), 'saved_models/finetuned-bert-model.pt')
 
     print(f'\tTrain Loss: {train_loss:.3f} | Train Accuracy: {train_acc * 100:.2f}%')
     print(f'\tTest Loss:  {test_loss:.3f} | Test Accuracy:  {test_acc * 100:.2f}%')
